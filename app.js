@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const port = process.env.PORT || 3000;
 
 //mongodb
 require('./app_server/models/db');
@@ -52,5 +53,9 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
+
+app.listen(port, () => {
+    console.log(`App listening at http://localhost:${port}`)
+  })
 
 module.exports = app;

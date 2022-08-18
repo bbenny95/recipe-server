@@ -21,6 +21,6 @@
     "@angular/compiler-cli": "^14.1.2"
   },
   "engines": {
-    "node": "10.x"
+    "node": "16.13.2"
   }
 }
