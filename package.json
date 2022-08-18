@@ -19,5 +19,8 @@
   "devDependencies": {
     "@angular/cli": "^14.1.2",
     "@angular/compiler-cli": "^14.1.2"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
